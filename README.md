@@ -1,0 +1,1 @@
+# collect-device-info

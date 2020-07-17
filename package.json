@@ -1,0 +1,19 @@
+{
+  "name": "collect-device-info",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamakiii-sandbox/collect-device-info.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tamakiii-sandbox/collect-device-info/issues"
+  },
+  "homepage": "https://github.com/tamakiii-sandbox/collect-device-info#readme"
+}

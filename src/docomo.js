@@ -31,13 +31,13 @@ const puppeteer = require('puppeteer-core');
         const tables = detail.querySelectorAll('div.spec.mb20 table');
         return {
           label: detail.getAttribute('label'),
-          title: detail.querySelector('h2').innerText,
+          title: detail.querySelector('h2').innerText.trim(),
           rows: Array.from(h3s).map((h3) => ({
             index: Array.from(h3s).indexOf(h3),
-            name: h3.innerText.replace(/\s/g, ''),
+            name: h3.innerText.trim(),
             body: Array.from(Array.from(tables)[Array.from(h3s).indexOf(h3)].querySelectorAll('tr')).map(tr => ({
-              key: tr.querySelector('th').innerText.replace(/\s/g, ''),
-              value: tr.querySelector('td').innerText.replace(/\s/g, '')
+              key: tr.querySelector('th').innerText.trim(),
+              value: tr.querySelector('td').innerText.trim(),
             })),
           })),
         };

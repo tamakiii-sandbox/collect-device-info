@@ -22,8 +22,8 @@ const puppeteer = require('puppeteer-core');
       }));
   });
 
-  const results = await Promise.all([links[0]].map(async link => {
-  // const results = await Promise.all(links.map(async link => {
+  // const results = await Promise.all([links[0]].map(async link => {
+  const results = await Promise.all(links.map(async link => {
     await page.goto(link.href);
     return await page.evaluate(() => ({
       name: document.querySelector('#spec h1').innerText,

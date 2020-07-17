@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tamakiii-sandbox/collect-device-info/issues"
   },
-  "homepage": "https://github.com/tamakiii-sandbox/collect-device-info#readme"
+  "homepage": "https://github.com/tamakiii-sandbox/collect-device-info#readme",
+  "dependencies": {
+    "puppeteer-core": "^5.2.0"
+  }
 }
